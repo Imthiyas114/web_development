@@ -11,11 +11,12 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
-<header class="content" >
-<div class="row"> 
-<div class=" col-md-12 p-3 ">
-    <ul class="content1 d-flex ">
-        
+<header class="content">
+<div class="row" id="first row"> 
+<div class=" col-md-12 p-3 " id="header-col">
+    
+    <ul class="content1 d-flex " id="unlist-Header">
+        <div class="menu1" id="header-Menu">  
         <li><a href="#" class="bar"> English</a></li>
         <li class="bar">|</li>
         <li><a href="#" class="text">हिन्दी</a></li>
@@ -33,6 +34,7 @@
         <li><a href="#"class="text">Tender</a></li>
         <li class="bar">|</li>
         <li><a href="#" class="text"> FAQ</a></li>
+    </div>
     </ul>
 
 
@@ -58,9 +60,9 @@
     <img image-size="100%" src="https://www.isro.gov.in/media_isro/image/isrobannerLarge.png.webp" class="my-image" alt="image">
     
     </div>
-    <div class="thirdpart"> 
-        
-    <ul class=" third d-flex ml-auto" >
+    <nav class="thirdpart"> 
+    <div class="menu" id="myNavMenu">
+    <ul class=" third" id="nav-mennu" >
        <li><a href="#"class="left">Home<i class="fa fa-angle-down" aria-hidden="true"></i></a></li> 
        <li><a href="#"class="left">About<i class="fa fa-angle-down" aria-hidden="true"></i></a></li> 
        <li><a href="#"class="left">Activities<i class="fa fa-angle-down" aria-hidden="true"></i></a></li> 
@@ -69,14 +71,14 @@
         <li><a href="#"class="left">Resources<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
          <li><a href="#"class="left">Engagements<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
             </ul>
-    
+        </div>
       <div id="search">        
       <input type="text" class="input" placeholder="Search" id="text">
        <button class="searchicon"><i class="fa-solid fa-magnifying-glass"></i></button>
-       <i class="fa-solid fa-list"></i>
+       <i class="fa-solid fa-list" id="menu-toggle" onclick="myMenuFunction()"></i>
     </div>  
-    <i class="fa-solid fa-users"></i>
-    </div>
+    <i class="fa-solid fa-users" ></i>
+</nav>
    <div class="fourthpart"></div>
    <div class="fifthpart">
     <p class="flasnews">
@@ -263,7 +265,7 @@
 
 
 
-
+    <script src="./script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
